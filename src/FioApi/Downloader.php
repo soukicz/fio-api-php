@@ -19,7 +19,7 @@ class Downloader
     /** @var Client */
     protected $client;
 
-    public function __construct(string $token, ClientInterface $client = null)
+    public function __construct(string $token, ?ClientInterface $client = null)
     {
         $this->urlBuilder = new UrlBuilder($token);
         $this->client = $client;
